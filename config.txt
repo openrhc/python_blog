@@ -1,0 +1,8 @@
+mysql
+database: django_blog
+user: django_user
+pass: 123456
+// 新建用户
+create user django_user identified by '123456';
+grant all on django_blog.* to 'django_user'@'%';
+flush privileges;
