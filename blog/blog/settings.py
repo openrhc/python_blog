@@ -122,6 +122,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# 设置静态资源路径
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 
 # redis
 CACHES = {
