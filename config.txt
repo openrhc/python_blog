@@ -6,3 +6,13 @@ pass: 123456
 create user django_user identified by '123456';
 grant all on django_blog.* to 'django_user'@'%';
 flush privileges;
+
+创建users子应用
+python .\manage.py startapp users
+
+启动
+python .\manage.py runserver
+
+
+super user
+10001 rhc rhc
